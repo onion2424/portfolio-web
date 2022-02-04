@@ -1,0 +1,15 @@
+[package]
+name = "svelte"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-files = "0.5.0"
+actix-web = {version = "3.3.3", features = ["rustls"]}
+actix-rt = "2.5.1"
+rustls= "0.18.0"
+anyhow = "1.0.52"
+handlebars = {version = "4.2.0", features = ["dir_source"]}
+serde_json = "1.0.74"
