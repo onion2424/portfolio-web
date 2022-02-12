@@ -2,16 +2,827 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+    <link rel="stylesheet" href="/static/css/normalize.css">
+    <link rel="stylesheet" href="/static/css/main.css">
     <title>Portfolio for working</title>
-    <script type="module" crossorigin src="/assets/main.4ce09384.js"></script>
-    <link rel="modulepreload" href="/assets/vendor.3bae58bb.js">
-    <link rel="stylesheet" href="/assets/main.2549448c.css">
   </head>
   <body>
-    <div id="app"></div>
+    <main>
+    <div class="header">
+      <div class="wrapper">
+        <h1>Thank you for watching!</h1>
+        <p>今の自分の経験、作品等をまとめました。</p>
+      </div>
+    </div>
+  
     
+    <div class="contents">
+      <div class="work black" data-works-id="training">
+        <input type="checkbox"/>
+        <div class="headline">
+          <h2 class=title-border>高速開発</h2>
+          <h3>売り上げ管理システムの作成</h3>
+          <p>VBA</p>
+        </div>
+
+        <div style="background-image: url('../static/image/training.png')" alt="training" class="image"></div>
+
+        <div class="message">
+            <p>
+              　次のシステム導入までの繋ぎとしてExcelで売り上げ管理システムを4人チームで作成しました。納品物をフォームで入力してデータを登録し、印刷する部分を担当しました。
+            </p>
+            <p>
+              　VBAはほとんど触ったことがなく、もっさりしていてかなり使いづらかったですが団結感のあるスピーディーな開発が面白かったです。
+            </p>
+            
+        </div>
+
+      </div>
+
+      <div class="work white" data-works-id="login">
+        <input type="checkbox"/>
+        <div class="headline">
+          <h2 class=title-border>勤怠管理</h2>
+          <h3>バッチ部分を作成</h3>
+          <p>C++, SQLServer, batch file, Postman</p>
+        </div>
+  
+        <div style="background-image: url('../static/image/login.png')" alt="login" class="image"></div>
+  
+        <div class="message">
+          <p>
+          　PCのログイン, ログオフのログを毎朝サーバーに送る常駐アプリを3人チームで作成しました。送られてきたログをデータベースに登録してファイルに書き出す部分と、ファイルを整理するバッチの作成を担当しました。
+           ハッシュ値での偽装防止や送信タイミングをずらす処理、再送方法など設計の時点でかなり工夫が凝らされていて驚きました。また、負荷テストを行ったりインストール用のマニュアルを作成したりと、これが仕事としてのアプリ開発なんだなと実感させられました。
+          </p>
+  
+        </div>
+      </div>
+
+      <div class="work white" data-works-id="system">
+        <input type="checkbox"/>
+        <div class="headline">
+          <h2 class=title-border>販売管理</h2>
+          <h3>システムの大部分を作成</h3>
+          <p>Vue/Vuex, Wijimo, C#.NET, SQLServer</p>
+        </div>
+  
+        <div style="background-image: url('../static/image/system.png')" alt="login" class="image"></div>
+  
+        <div class="message">
+          <p>
+            　工場の基幹システムの販売管理部分を3人チームで作成しました。初めて主として任せられた案件で、期間は4ヶ月ほどでした。
+            必要な画面と機能概要だけ与えられ、実装面は全て任されるという形で開発をしました。
+          </p>
+          <p>
+            　Webアプリでシステムを作成したので、バックエンドもフロントエンドもしっかりと学ぶことができました。特に、JavaScriptとSQLに強くなりました。
+          </p>
+        </div>
+      </div> 
+
+      <div class="work black" data-works-id="vuelidate">
+        <input type="checkbox"/>
+        <div class="headline">
+          <h2 class=title-border>業務効率化</h2>
+          <h3>ExcelのデータをDBに移行、管理するWebアプリの作成</h3>
+          <p>HTML/CSS, JavaScript, Vue/Vuelidate, SQLServer</p>
+        </div>
+  
+        <div style="background-image: url('../static/image/vuelidate.png')" alt="login" class="image"></div>
+  
+        <div class="message">
+          <p>
+            　Excelのデータをデータベースに移行して管理するためのWebアプリを2人チームで作成しました。Vuelidateというキーワードと、テーブルごとにデータを管理するフォームを自動で作りたいということだけ伝えられ設計から担当しました。
+          </p>
+          <p>
+            　VuelidateはJson形式でフォームを生成し、入力値の正誤を確認することができるものです。それを拡張してテーブルのカラムごとに様々な機能をつけて自動でフォーム化できるようなアプリを作成することができました。
+          </p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="header" >
+      <div class="wrapper">
+        <p>以上が前職での1年間の経験です。</p>
+        <p>次は、これからの就職に向けて作成した作品をご覧ください。</p>
+        
+      </div>
+    </div>
+  
+    <div class="contents">
+      <div class="work black" data-works-id="website">
+        <a href="https://github.com/onion2424/portfolio-web" target="_blank" rel="noopener noreferrer" class="github"></a>
+        <input type="checkbox"/>
+        <div class="headline">
+          <h2 class=title-border>Webサイト</h2>
+          <h3>ポートフォリオとして作成</h3>
+          <p>HTML/CSS, Rust</p>
+        </div>
+        <div style="background-image: url('../static/image/this_site.png')" alt="this_site" class="image"></div>
+        <div class="message">
+          <p>
+            　キャリアのないエンジニアの転職にはポートフォリオがあった方が良いということを知り作成しました。
+            パッと見でのわかりやすさを重視しつつ、全体を通して読み物のような構成になるよう心がけました。
+          </p>
+          <p>
+            　CSSで出来ることを知りたかったのでなるべくJavaScriptに頼らないようにしていった結果、多少無理矢理感もありますが１行も書くことなく作り切れました。
+          </p>
+        </div>
+      </div>
+      <div class="work white" data-works-id="later-do">
+        <a href="https://github.com/onion2424/later-do" target="_blank" rel="noopener noreferrer" class="github"></a>
+        <input type="checkbox"/>
+        <div class="headline">
+          <h2 class=title-border>LineBot</h2>
+          <h3>ポートフォリオとして作成</h3>
+          <p>HTML/CSS, TypeScript, Svelte, PHP, LINEBot/MessagingAPI/Liff</p>
+        </div>
+        <div style="background-image: url('../static/image/later_do.png')" alt="later_do" class="image"></div>
+        <div class="message">
+          <p>
+            　ポートフォリオはWebサービスを載せるものだと知り急いで作成しました。
+            実装の簡単さと実用性と実際に稼働するという３点に焦点を当てて構想しました。
+          </p>
+          <figure><img src="static/image/M_gainfriends_qr.png" /><figcaption>※デモ登録なのでリマインドはしません</figcaption></figure>
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="header" >
+      <div class="wrapper">
+        <p>上のメインの作品は2つとも、githubにコードや説明を載せています。よろしければ見ていってください。</p>
+        <p>これ以降は自己紹介のようなものなので気楽にどうぞ。
+        </p>
+      </div>
+    </div>
+    
+    <div class="skills">
+      <div class="skill">
+        <div class= "front">
+          <h2>HTML/CSS<span class="score">5.0</span></h2>
+          <p>
+            　初学者向けの本を読んで一通り学んだのでタグやフォーム、構成については理解しています。<br/>
+            　CSSで複雑なデザインを作るというようなことはなかなか出来ませんが、CSSで何が出来るのかは知っているので都度調べながら大体のものは実装出来ると思います。
+          </p>
+          <p>※これを含め点数は全てただの自信の度合いです。</p>
+        </div>
+        <div class="back">
+          <div class="skill_header">
+            <div data-position="left" >
+              <div class="position_wrapper">
+                <div>
+                  <img src="static/image/html_css.png"/>
+                </div>
+              </div>
+            </div>
+            <div data-position="center">
+              <div class="position_wrapper">
+                <h2><span>HTML</span><span>/CSS</span></h2>
+              </div>
+            </div>
+            <div data-position="right" >
+              <div class="position_wrapper">
+                <h3>総合評価</h3>
+                <h1><span class="score">5.0</span></h1>
+              </div>
+            </div>
+          </div>
+          <div class="skill_contents">
+            <div class="skill_contents_wrapper">
+              <div class="skill_graph" data-proficiency="80%">
+                <div class="skill-info">
+                  <p class="skill-name">基本構文</p><!-- 名前 -->
+                  <p class="skill-percentage">
+                    <span class="countup"></span>
+                  </p>
+                </div>
+              
+                <div class="skill-bar-container"><!-- スキルバーの親要素 -->
+                  <div class="skill-bar"></div><!-- スキルバー本体 -->
+                </div>
+              </div>
+
+              <div class="skill_graph" data-proficiency="60%">
+                <div class="skill-info">
+                  <p class="skill-name">レスポンシブ</p><!-- 名前 -->
+                  <p class="skill-percentage">
+                    <span class="countup"></span>
+                  </p>
+                </div>
+              
+                <div class="skill-bar-container"><!-- スキルバーの親要素 -->
+                  <div class="skill-bar"></div><!-- スキルバー本体 -->
+                </div>
+              </div>
+
+              <div class="skill_graph" data-proficiency="74%">
+                <div class="skill-info">
+                  <p class="skill-name">フォーム</p><!-- 名前 -->
+              
+                  <p class="skill-percentage">
+                    <span class="countup"></span>
+                  </p>
+                </div>
+              
+                <div class="skill-bar-container"><!-- スキルバーの親要素 -->
+                  <div class="skill-bar"></div><!-- スキルバー本体 -->
+                </div>
+              </div>
+
+              <div class="skill_graph" data-proficiency="32%">
+                <div class="skill-info">
+                  <p class="skill-name">デザイン</p><!-- 名前 -->
+              
+                  <p class="skill-percentage">
+                    <span class="countup"></span>
+                  </p>
+                </div>
+              
+                <div class="skill-bar-container"><!-- スキルバーの親要素 -->
+                  <div class="skill-bar"></div><!-- スキルバー本体 -->
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="front">
+          <h2>JavaScript<span class="score">8.0</span></h2>
+          <p>
+            　前職で一番使用したプログラミング言語です。しっかりと入門書から入ったので特性を理解した書き方が出来ると思います。ES2015より前の構文は知りませんが、DOM操作, イベント処理を含めWebアプリを作る分には実務レベルで扱える自信があります。<br/>
+            　個人的に一番好きな言語なので理解度を増やしていくことはもちろん、最適なコードを書けるようにどんな些細なことにもこだわっていきたいです。
+          </p>
+          <p>
+            好きな構文　：　<span>x = a || b </span>;
+          </p>
+        </div>
+        <div class="back">
+          <div class="skill_header">
+            <div data-position="left" >
+              <div class="position_wrapper">
+                <div>
+                  <img src="static/image/javascript.png"/>
+                </div>
+              </div>
+            </div>
+            <div data-position="center">
+              <div class="position_wrapper">
+                <h2><span>Java</span><span>Script</span></h2>
+              </div>
+            </div>
+            <div data-position="right" >
+              <div class="position_wrapper">
+                <h3>総合評価</h3>
+                <h1><span class="score">8.0</span></h1>
+              </div>
+            </div>
+          </div>
+          <div class="skill_contents">
+            <div class="skill_contents_wrapper">
+              <div class="skill_graph" data-proficiency="93%">
+                <div class="skill-info">
+                  <p class="skill-name">基本構文</p><!-- 名前 -->
+                  <p class="skill-percentage">
+                    <span class="countup"></span>
+                  </p>
+                </div>
+              
+                <div class="skill-bar-container"><!-- スキルバーの親要素 -->
+                  <div class="skill-bar"></div><!-- スキルバー本体 -->
+                </div>
+              </div>
+
+              <div class="skill_graph" data-proficiency="85%">
+                <div class="skill-info">
+                  <p class="skill-name">DOM操作</p><!-- 名前 -->
+                  <p class="skill-percentage">
+                    <span class="countup"></span>
+                  </p>
+                </div>
+              
+                <div class="skill-bar-container"><!-- スキルバーの親要素 -->
+                  <div class="skill-bar"></div><!-- スキルバー本体 -->
+                </div>
+              </div>
+
+              <div class="skill_graph" data-proficiency="70%">
+                <div class="skill-info">
+                  <p class="skill-name">フレームワーク</p><!-- 名前 -->
+              
+                  <p class="skill-percentage">
+                    <span class="countup"></span>
+                  </p>
+                </div>
+              
+                <div class="skill-bar-container"><!-- スキルバーの親要素 -->
+                  <div class="skill-bar"></div><!-- スキルバー本体 -->
+                </div>
+              </div>
+
+              <div class="skill_graph" data-proficiency="50%">
+                <div class="skill-info">
+                  <p class="skill-name">モジュール</p><!-- 名前 -->
+              
+                  <p class="skill-percentage">
+                    <span class="countup"></span>
+                  </p>
+                </div>
+              
+                <div class="skill-bar-container"><!-- スキルバーの親要素 -->
+                  <div class="skill-bar"></div><!-- スキルバー本体 -->
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="front">
+          <h2>バックエンド<span class="score">4.0</span></h2>
+          <p>
+            　C#やJavaでのバックエンドの経験はあるのでどんな言語でも少し勉強すれば使えるようになると思います。しかしまだまだ経験が浅いので、言われたとおりに書くことは出来ても技術の取捨選択やセキュリティの配慮等はひとりではこなせません。なので、これから学んでいきます。<br/>
+            　低レイヤーのことからしっかり学び、応用力のある技術者になっていきたいです。
+          </p>
+        </div>
+        <div class="back">
+          <div class="skill_header">
+            <div data-position="left" >
+              <div class="position_wrapper">
+                <div>
+                  <img src="static/image/console.png"/>
+                </div>
+              </div>
+            </div>
+            <div data-position="center">
+              <div class="position_wrapper">
+                <h2><span>バック</span><span>エンド</span></h2>
+              </div>
+            </div>
+            <div data-position="right" >
+              <div class="position_wrapper">
+                <h3>総合評価</h3>
+                <h1><span class="score">4.0</span></h1>
+              </div>
+            </div>
+          </div>
+          <div class="skill_contents">
+            <div class="skill_contents_wrapper">
+              <div class="skill_graph" data-proficiency="60%">
+                <div class="skill-info">
+                  <p class="skill-name">プログラミング</p><!-- 名前 -->
+                  <p class="skill-percentage">
+                    <span class="countup"></span>
+                  </p>
+                </div>
+              
+                <div class="skill-bar-container"><!-- スキルバーの親要素 -->
+                  <div class="skill-bar"></div><!-- スキルバー本体 -->
+                </div>
+              </div>
+
+              <div class="skill_graph" data-proficiency="56%">
+                <div class="skill-info">
+                  <p class="skill-name">インターネット</p><!-- 名前 -->
+                  <p class="skill-percentage">
+                    <span class="countup"></span>
+                  </p>
+                </div>
+              
+                <div class="skill-bar-container"><!-- スキルバーの親要素 -->
+                  <div class="skill-bar"></div><!-- スキルバー本体 -->
+                </div>
+              </div>
+
+              <div class="skill_graph" data-proficiency="20%">
+                <div class="skill-info">
+                  <p class="skill-name">OS</p><!-- 名前 -->
+              
+                  <p class="skill-percentage">
+                    <span class="countup"></span>
+                  </p>
+                </div>
+              
+                <div class="skill-bar-container"><!-- スキルバーの親要素 -->
+                  <div class="skill-bar"></div><!-- スキルバー本体 -->
+                </div>
+              </div>
+
+              <div class="skill_graph" data-proficiency="27%">
+                <div class="skill-info">
+                  <p class="skill-name">セキュリティ</p><!-- 名前 -->
+              
+                  <p class="skill-percentage">
+                    <span class="countup"></span>
+                  </p>
+                </div>
+              
+                <div class="skill-bar-container"><!-- スキルバーの親要素 -->
+                  <div class="skill-bar"></div><!-- スキルバー本体 -->
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="front">
+          <h2>データベース<span class="score">6.5</span></h2>
+          <p>
+            　SQLを組み立てることは軽く調べながらであれば不自由なくこなせます。前職では締め処理をストアドで書いたことがあるので多少複雑な処理も速度を意識して書けます。
+            しかし、データベース自体への理解が不足しているので運用を考えたり実行計画を元にしたチューニング等はうまく出来ないので徐々に経験を積んでいきたいです。
+          </p>
+          <p>
+            驚いたこと　：　Excelのマクロでも平気で動く
+          </p>
+        </div>
+        <div class="back">
+          <div class="skill_header">
+            <div data-position="left" >
+              <div class="position_wrapper">
+                <div>
+                  <img src="static/image/mysql.png"/>
+                </div>
+              </div>
+            </div>
+            <div data-position="center">
+              <div class="position_wrapper">
+                <h2><span>データ</span><span>ベース</span></h2>
+              </div>
+            </div>
+            <div data-position="right" >
+              <div class="position_wrapper">
+                <h3>総合評価</h3>
+                <h1><span class="score">6.5</span></h1>
+              </div>
+            </div>
+          </div>
+          <div class="skill_contents">
+            <div class="skill_contents_wrapper">
+              <div class="skill_graph" data-proficiency="80%">
+                <div class="skill-info">
+                  <p class="skill-name">基本構文</p><!-- 名前 -->
+                  <p class="skill-percentage">
+                    <span class="countup"></span>
+                  </p>
+                </div>
+              
+                <div class="skill-bar-container"><!-- スキルバーの親要素 -->
+                  <div class="skill-bar"></div><!-- スキルバー本体 -->
+                </div>
+              </div>
+
+              <div class="skill_graph" data-proficiency="60%">
+                <div class="skill-info">
+                  <p class="skill-name">高速化</p><!-- 名前 -->
+                  <p class="skill-percentage">
+                    <span class="countup"></span>
+                  </p>
+                </div>
+              
+                <div class="skill-bar-container"><!-- スキルバーの親要素 -->
+                  <div class="skill-bar"></div><!-- スキルバー本体 -->
+                </div>
+              </div>
+
+              <div class="skill_graph" data-proficiency="20%">
+                <div class="skill-info">
+                  <p class="skill-name">障害対策</p><!-- 名前 -->
+              
+                  <p class="skill-percentage">
+                    <span class="countup"></span>
+                  </p>
+                </div>
+              
+                <div class="skill-bar-container"><!-- スキルバーの親要素 -->
+                  <div class="skill-bar"></div><!-- スキルバー本体 -->
+                </div>
+              </div>
+
+              <div class="skill_graph" data-proficiency="30%">
+                <div class="skill-info">
+                  <p class="skill-name">ACID特性</p><!-- 名前 -->
+              
+                  <p class="skill-percentage">
+                    <span class="countup"></span>
+                  </p>
+                </div>
+              
+                <div class="skill-bar-container"><!-- スキルバーの親要素 -->
+                  <div class="skill-bar"></div><!-- スキルバー本体 -->
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="front">
+          <h2>インフラ<span class="score">3.0</span></h2>
+          <p>
+            　大学ではサーバ構築をLinuxでカタカタやって～といったプログラミングとは完全に分かれた技術のように習い興味がなかったので最低限Webページを公開する程度の知識しかありません。<br/>
+            　いつのまにか時代が変わってクラウドが当たり前になりインフラ構築とプログラマーの距離が近くなったと感じるので基本からじっくり学び常に最新技術についていけるようにしたいです。
+          </p>
+        </div>
+        <div class="back">
+          <div class="skill_header">
+            <div data-position="left" >
+              <div class="position_wrapper">
+                <div>
+                  <img src="static/image/cloud.png"/>
+                </div>
+              </div>
+            </div>
+            <div data-position="center">
+              <div class="position_wrapper">
+                <h2><span>インフラ</span></h2>
+              </div>
+            </div>
+            <div data-position="right" >
+              <div class="position_wrapper">
+                <h3>総合評価</h3>
+                <h1><span class="score">3.0</span></h1>
+              </div>
+            </div>
+          </div>
+          <div class="skill_contents">
+            <div class="skill_contents_wrapper">
+              <div class="skill_graph" data-proficiency="50%">
+                <div class="skill-info">
+                  <p class="skill-name">サーバー</p><!-- 名前 -->
+                  <p class="skill-percentage">
+                    <span class="countup"></span>
+                  </p>
+                </div>
+              
+                <div class="skill-bar-container"><!-- スキルバーの親要素 -->
+                  <div class="skill-bar"></div><!-- スキルバー本体 -->
+                </div>
+              </div>
+
+              <div class="skill_graph" data-proficiency="63%">
+                <div class="skill-info">
+                  <p class="skill-name">ネットワーク</p><!-- 名前 -->
+                  <p class="skill-percentage">
+                    <span class="countup"></span>
+                  </p>
+                </div>
+              
+                <div class="skill-bar-container"><!-- スキルバーの親要素 -->
+                  <div class="skill-bar"></div><!-- スキルバー本体 -->
+                </div>
+              </div>
+
+              <div class="skill_graph" data-proficiency="15%">
+                <div class="skill-info">
+                  <p class="skill-name">クラウド</p><!-- 名前 -->
+              
+                  <p class="skill-percentage">
+                    <span class="countup"></span>
+                  </p>
+                </div>
+              
+                <div class="skill-bar-container"><!-- スキルバーの親要素 -->
+                  <div class="skill-bar"></div><!-- スキルバー本体 -->
+                </div>
+              </div>
+
+              <div class="skill_graph" data-proficiency="0%">
+                <div class="skill-info">
+                  <p class="skill-name">DevOps</p><!-- 名前 -->
+              
+                  <p class="skill-percentage">
+                    <span class="countup"></span>
+                  </p>
+                </div>
+              
+                <div class="skill-bar-container"><!-- スキルバーの親要素 -->
+                  <div class="skill-bar"></div><!-- スキルバー本体 -->
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="front">
+          <h2>Person<span>undefined</span></h2>
+          <p>
+            　プログラムを書くことは好きなので家でも気が乗ったときに技術本を読んだりして良いエンジニアになれるよう励んでいます。しかし、有用な書籍を見つけるのはなかなか難しかったり実務でしか学べないこともたくさんあり自主的な勉強だけでは限界があると思っています。<br/>
+            　なので技術的な相談がしやすい環境だったり、技術の共有や教育の制度が整っている職場で腰を据えて働きたいと思っています。
+          </p>
+          <p>
+            　必死に食らいついていく自信はあるので雇ってください。（ 軽めの面接でお願いします。）
+          </p>
+        </div>
+        <div class="back">
+          <div class="skill_header">
+            <div data-position="left" >
+              <div class="position_wrapper">
+                <div>
+                  <img src="static/image/personal.png"/>
+                </div>
+              </div>
+            </div>
+            <div data-position="center">
+              <div class="position_wrapper">
+                <h2><span>Person</span></h2>
+              </div>
+            </div>
+            <div data-position="right" >
+              <div class="position_wrapper">
+                <h3>ポテンシャル</h3>
+                <h1><span class="potential">1.0</span></h1>
+              </div>
+            </div>
+          </div>
+          <div class="skill_contents">
+            <div class="skill_contents_wrapper">
+              <div class="skill_graph" data-proficiency="0%">
+                <div class="skill-info">
+                  <p class="skill-name">面接</p><!-- 名前 -->
+                  <p class="skill-percentage">
+                    <span class="countup"></span>
+                  </p>
+                </div>
+              
+                <div class="skill-bar-container"><!-- スキルバーの親要素 -->
+                  <div class="skill-bar"></div><!-- スキルバー本体 -->
+                </div>
+              </div>
+
+              <div class="skill_graph" data-proficiency="100%">
+                <div class="skill-info">
+                  <p class="skill-name">生涯プログラマー</p><!-- 名前 -->
+                  <p class="skill-percentage">
+                    <span class="countup"></span>
+                  </p>
+                </div>
+              
+                <div class="skill-bar-container"><!-- スキルバーの親要素 -->
+                  <div class="skill-bar"></div><!-- スキルバー本体 -->
+                </div>
+              </div>
+
+              <div class="skill_graph" data-proficiency="100%">
+                <div class="skill-info">
+                  <p class="skill-name">ねこ好き</p><!-- 名前 -->
+              
+                  <p class="skill-percentage">
+                    <span class="countup"></span>
+                  </p>
+                </div>
+              
+                <div class="skill-bar-container"><!-- スキルバーの親要素 -->
+                  <div class="skill-bar"></div><!-- スキルバー本体 -->
+                </div>
+              </div>
+
+              <div class="skill_graph" data-proficiency="100%">
+                <div class="skill-info">
+                  <p class="skill-name">考えること好き</p><!-- 名前 -->
+              
+                  <p class="skill-percentage">
+                    <span class="countup"></span>
+                  </p>
+                </div>
+              
+                <div class="skill-bar-container"><!-- スキルバーの親要素 -->
+                  <div class="skill-bar"></div><!-- スキルバー本体 -->
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  
+    <div class="header">
+      <div class="wrapper">
+        <p>プログラミング自体やアルゴリズムを考えることが好きなので言語にこだわらず遊んでいます。</p>
+      </div>
+    </div>
+    
+    <div class="contents">
+      <div class="work black" data-works-id="MakeCode">
+        <input type="checkbox"/>
+        <div class="headline">
+          <h2 class="title-border">MineCraft</h2>
+          <h3>ブロック当てゲーム</h3>
+          <p>MakeCode</p>
+        </div>
+        <div class="video">
+          <div class="video_container youtube center">
+            <div class="iframe_wrapper">
+             <iframe src="https://www.youtube.com/embed/hLxjYZYNBZ8?rel=0&mute=1&playsinline=1" title="Youtube video player"   frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="message">
+          <p>
+            　小学生に「プログラミングって何が出来るの？」と言われたので作成しました。ウケは微妙でしたが、配列はこういう風に使えるんだよなどと説明するのには役立ちました。
+          </p>
+          <p>
+            　MakeCodeはScratch形式でプログラミングを書き小さいロボットを動かせるものです。コンピュータとの対戦形式にしましたが、完全にあてずっぽうなので当てられる確率は1/600です。
+          </p>
+        </div>
+
+      </div>
+      
+      <div class="work black" data-works-id="MakeCode">
+        <input type="checkbox"/>
+        <div class="headline">
+          <h2 class="title-border">Human Resource Machine</h2>
+          <h3>入社41年目 並べ替えよ</h3>
+          <p>機械語</p>
+        </div>
+        <div class="video">
+          <div class="video_container youtube center">
+            <div class="iframe_wrapper">
+             <iframe src="https://www.youtube.com/embed/_3utm73T4Ls?rel=0&mute=1&playsinline=1" title="Youtube video player"   frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="message">
+          <p>
+            　なかなかの歯ごたえで、完全クリアのために丸２日くらい没頭してました。最後の問題が綺麗に書けたので記念に載せておきます。バブルソートもどきです。
+          </p>
+          <p>
+            　大学でCASL2を使って機械語を書く講義がありましたがかなり不人気だったので、これくらいかわいいUIがあればハードルが下がるのではないかと思います。
+          </p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="header">
+      <div class="wrapper">
+        <p>最後に、これまでの日常で生まれた作品を紹介します。</p>
+      </div>
+    </div>
+  
+    <div class="contents">
+      <div class="work black" data-works-id="HitBlow">
+        <a href="https://github.com/onion2424/Hit-and-Blow" target="_blank" rel="noopener noreferrer" class="github"></a>
+        <input type="checkbox"/>
+        <div class="headline">
+          <h2 class=title-border>Hit&Blow</h2>
+          <h3>コール候補を教えてくれる</h3>
+          <p>C++</p>
+        </div>
+        <div style="background-image: url('../static/image/hitblow.png')" alt="this_site" class="image"></div>
+        <div class="message">
+            <p>
+              　３桁被りなし０有りルールのHit&Blowでミニマックス法に則った最善手を出力するコンソールアプリを作成しました。
+              １つのコールに対するレスポンス９通りの内、必ず一番悪いものが返ってくると想定したときの一番良い手を全手から探索しています。
+            </p>
+            <p>
+              　５手以内に必ず特定できるらしいという噂を聞き、試すためにランダムな答えと初手で指定回数繰り返すものを作成したのですが、改良してこうなりました。
+            </p>
+        </div>
+      </div>
+  
+      <div class="work black" data-works-id="PuyoPuyo">
+        <a href="https://github.com/onion2424/puyopuyo" target="_blank" rel="noopener noreferrer" class="github"></a>
+        <input type="checkbox"/>
+        <div class="headline">
+          <h2 class=title-border>ぷよぷよ</h2>
+          <h3>勝手に連鎖を組む</h3>
+          <p>C++</p>
+        </div>
+        <div class="video">
+          <div class="video_container center">
+            <div class="iframe_wrapper">
+             <video loop muted autoplay playsinline>
+              <source src="/static/image/puyo.mp4">
+             </video>
+            </div>
+          </div>
+        </div>
+        <div class="message">
+          <p>
+            　２年前くらいにぷよぷよのAIが少し流行ったので、仕組みが気になって作成しました。
+            <a href="https://www.slideshare.net/mayahjp/puyoai-gpw2015" target="_blank" rel="noopener noreferrer">ビットフィールドを用いてPDEP, PEXT命令で連鎖が出来る</a>ということと、
+            <a href="https://www.slideshare.net/takapt0226/ai-52214222" target="_blank" rel="noopener noreferrer">モンテカルロ法とビームサーチを使って良い感じに評価をすることで上手に連鎖を組んでくれる</a>
+            ということを調べあげなんとか形にすることができました。
+          </p>
+          <p>
+            　一番難しかったプログラムなので、一番愛しています。思考部分が美しいのでぜひ見ていってください。
+          </p>
+        </div>
+      </div>
+      
+  
+    </div>
+  </main>
   </body>
+
 </html>
