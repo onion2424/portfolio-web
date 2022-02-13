@@ -277,17 +277,21 @@
 
       //PC以外は表のみ
       @media (max-width:1023px){
-        div.back{
+        .back{
           display: none;
         }
-
+        .front{
+          border-radius:18px;
+          box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+          text-align: left;
+          padding: 5px;
+        }
       }
       //裏返す処理
       @media(min-width: 1024px){
         div.front, div.back{
           position:absolute;
           transition: transform 0.6s ease, opacity 0.2s ease;
-          position: absolute;
           left: 0;
           top: 0;
           height: 100%;

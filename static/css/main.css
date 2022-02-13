@@ -302,8 +302,15 @@ input[type='checkbox']:checked::before {
 }
 
 @media (max-width: 1023px) {
-  .skills div.skill div.back {
+  .skills div.skill .back {
     display: none;
+  }
+  .skills div.skill .front {
+    border-radius: 18px;
+    -webkit-box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+            box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: left;
+    padding: 5px;
   }
 }
 
@@ -314,7 +321,6 @@ input[type='checkbox']:checked::before {
     transition: opacity 0.2s ease, -webkit-transform 0.6s ease;
     transition: transform 0.6s ease, opacity 0.2s ease;
     transition: transform 0.6s ease, opacity 0.2s ease, -webkit-transform 0.6s ease;
-    position: absolute;
     left: 0;
     top: 0;
     height: 100%;
