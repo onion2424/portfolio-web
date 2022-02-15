@@ -226,39 +226,49 @@ input[type="checkbox"] {
      -moz-appearance: none;
           appearance: none;
   outline: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 5px;
   cursor: pointer;
   height: 1rem;
   z-index: 200;
 }
 
-input[type="checkbox"]:hover::before {
+input[type="checkbox"]:hover::after {
   -webkit-box-shadow: 0px 1px 0px 0px #dbdbdb, 0px 2px 0px 0px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 1px 0px 0px #dbdbdb, 0px 2px 0px 0px rgba(0, 0, 0, 0.5);
 }
 
-input[type='checkbox']::before {
-  display: block;
-  content: 'MORE';
+input[type='checkbox']::after {
+  content: '   MORE';
+  position: relative;
+  left: 1rem;
 }
 
-input[type='checkbox']::after {
-  white-space: pre-wrap;
-  font-size: 10px;
-  content: ' ＞';
-  line-height: calc(1rem + 1rem * 0.2);
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
-  font-weight: 900;
+input[type='checkbox']::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  /* 縦軸をセンタリングする */
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  /* 縦軸をセンタリングする */
+  border: 5px solid transparent;
+  border-left: 8px solid #555;
+  /* 好みで色を変えてください */
 }
 
 input[type='checkbox']:checked::before {
-  content: 'BACK';
+  border: 5px solid transparent;
+  border-top: 8px solid #555;
+  /* 好みで色を変えてください */
+  -webkit-transform: translateY(-25%);
+          transform: translateY(-25%);
+}
+
+input[type='checkbox']:checked::after {
+  content: '   BACK';
 }
 
 .skills {
@@ -275,7 +285,6 @@ input[type='checkbox']:checked::before {
 
 .skills div.skill {
   background-color: white;
-  min-height: 400px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
