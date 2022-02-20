@@ -194,6 +194,7 @@ main div.black {
 /*workのidを持つもののトグル処理*/
 [data-works-id] {
   /*global 参照 https://stackoverflow.com/questions/59669571/svelte-dynamic-html-elements-do-not-have-css-applied */
+  /*チェックボックスカスタマイズ　参照　https://qiita.com/pe-ta/items/74822fd9fce24848d97e*/
 }
 
 [data-works-id] div.message {
@@ -220,8 +221,7 @@ main div.black {
   display: none;
 }
 
-/*チェックボックスカスタマイズ　参照　https://qiita.com/pe-ta/items/74822fd9fce24848d97e*/
-input[type="checkbox"] {
+[data-works-id] input[type="checkbox"] {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -234,18 +234,18 @@ input[type="checkbox"] {
   z-index: 200;
 }
 
-input[type="checkbox"]:hover::after {
+[data-works-id] input[type="checkbox"]:hover::after {
   -webkit-box-shadow: 0px 1px 0px 0px #dbdbdb, 0px 2px 0px 0px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 1px 0px 0px #dbdbdb, 0px 2px 0px 0px rgba(0, 0, 0, 0.5);
 }
 
-input[type='checkbox']::after {
+[data-works-id] input[type="checkbox"]::after {
   content: '   MORE';
   position: relative;
   left: 1rem;
 }
 
-input[type='checkbox']::before {
+[data-works-id] input[type="checkbox"]::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -259,7 +259,7 @@ input[type='checkbox']::before {
   /* 好みで色を変えてください */
 }
 
-input[type='checkbox']:checked::before {
+[data-works-id] input[type="checkbox"]:checked::before {
   border: 5px solid transparent;
   border-top: 8px solid #555;
   /* 好みで色を変えてください */
@@ -267,7 +267,7 @@ input[type='checkbox']:checked::before {
           transform: translateY(-25%);
 }
 
-input[type='checkbox']:checked::after {
+[data-works-id] input[type="checkbox"]:checked::after {
   content: '   BACK';
 }
 
@@ -632,6 +632,133 @@ div[data-proficiency="100%"] span.countup::before {
 .title-border:after {
   margin-left: 1rem;
   padding-left: 2rem;
+}
+
+/* ボタン（デザインはお好みで） */
+.my_modal_btn {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* チェックボックスを非表示 */
+#my_modal1 {
+  display: none;
+}
+
+/* モーダル */
+.my_modal_body1 {
+  display: none;
+  position: fixed;
+  z-index: 100000;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  display: none;
+  background-color: #FFF;
+  overflow-y: auto;
+  /* スマホ用スクロール */
+  -webkit-overflow-scrolling: touch;
+  /* お好みで */
+  width: 90%;
+  max-height: 80%;
+  max-width: 600px;
+}
+
+/* モーダル内ヘッダー */
+.my_modal_header {
+  padding: 15px 10px;
+  background-color: #858585;
+  color: #FFF;
+  font-weight: bold;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  text-align: center;
+}
+
+/* クローズアイコン */
+.my_modal_close {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.my_modal_close_icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.my_modal_close_icon span::before,
+.my_modal_close_icon span::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 84%;
+  height: 16%;
+  margin: -8% 0 0 -42%;
+  background: #FFF;
+}
+
+.my_modal_close_icon span::before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.my_modal_close_icon span::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+/* コンテンツ表示 */
+.my_modal_content {
+  padding: 5px 10px;
+  text-align: left;
+}
+
+.my_modal_content .modal-foot {
+  border-top: 1px solid;
+  font-size: 0.8rem;
+}
+
+/* 背景を暗くする */
+.my_modal_overlay {
+  display: none;
+  position: fixed;
+  z-index: 90000;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  background-color: #111;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+/* チェック時オーバーレイとコンテンツを表示 */
+#my_modal1:checked ~ .my_modal_body1, #my_modal1:checked ~ .my_modal_overlay {
+  display: block;
 }
 
 .header {

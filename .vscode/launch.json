@@ -7,15 +7,15 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug executable 'webpack-test'",
+            "name": "Debug executable 'svelte'",
             "cargo": {
                 "args": [
                     "build",
-                    "--bin=webpack-test",
-                    "--package=webpack-test"
+                    "--bin=svelte",
+                    "--package=svelte"
                 ],
                 "filter": {
-                    "name": "webpack-test",
+                    "name": "svelte",
                     "kind": "bin"
                 }
             },
@@ -25,16 +25,16 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug unit tests in executable 'webpack-test'",
+            "name": "Debug unit tests in executable 'svelte'",
             "cargo": {
                 "args": [
                     "test",
                     "--no-run",
-                    "--bin=webpack-test",
-                    "--package=webpack-test"
+                    "--bin=svelte",
+                    "--package=svelte"
                 ],
                 "filter": {
-                    "name": "webpack-test",
+                    "name": "svelte",
                     "kind": "bin"
                 }
             },
